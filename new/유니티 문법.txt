@@ -1,0 +1,11 @@
+transform.Rotate(0, 0, 0); 물체를 - 만큼 회전
+transform.Translate(0, 0, 0); 물체를 -만큼 이동
+[SerializeField]float moveSpeed = 0.01f; 시각화
+
+float steerAmount = Input.GetAxis("Horizontal") * steerSpeed * Time.deltaTime;
+float moveAmount = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+
+void OnCollisionEnter2D(Collision2D collision)
+{
+    
+}
